@@ -12,16 +12,17 @@ sap.ui.define([
         },
 
         onInit: function () {
-            this.getView().setModel(new JSONModel({
-                features: [
-                    "Enterprise-Ready Web Toolkit",
-                    "Powerful Development Concepts",
-                    "Feature-Rich UI Controls",
-                    "Consistent User Experience",
-                    "Free and Open Source",
-                    "Responsive Across Browsers and Devices"
-                ]
-            })
+            this.getView().setModel(
+                new JSONModel({
+                    features: [
+                        "Enterprise-Ready Web Toolkit",
+                        "Powerful Development Concepts",
+                        "Feature-Rich UI Controls",
+                        "Consistent User Experience",
+                        "Free and Open Source",
+                        "Responsive Across Browsers and Devices"
+                    ]
+                })
             );
         },
 
