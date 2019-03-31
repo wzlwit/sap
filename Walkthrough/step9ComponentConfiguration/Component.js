@@ -7,7 +7,7 @@ sap.ui.define([
 
 	return UIComponent.extend("sap.ui.demo.walkthrough.Component", {
 
-		metadata : {
+		metadata: {
 			"rootView": {
 				"viewName": "sap.ui.demo.walkthrough.view.App",
 				"type": "XML",
@@ -16,14 +16,14 @@ sap.ui.define([
 			}
 		},
 
-		init : function () {
+		init: function () {
 			// call the init function of the parent
 			UIComponent.prototype.init.apply(this, arguments);
 
 			// set data model
 			var oData = {
-				recipient : {
-					name : "World"
+				recipient: {
+					name: "World"
 				}
 			};
 			var oModel = new JSONModel(oData);
@@ -31,7 +31,7 @@ sap.ui.define([
 
 			// set i18n model
 			var i18nModel = new ResourceModel({
-				bundleName : "sap.ui.demo.walkthrough.i18n.i18n"
+				bundleName: "sap.ui.demo.walkthrough.i18n.i18n"
 			});
 			this.setModel(i18nModel, "i18n");
 		}
