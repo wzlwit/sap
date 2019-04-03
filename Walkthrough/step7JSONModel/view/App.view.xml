@@ -11,3 +11,4 @@
 		valueLiveUpdate="true"
 		width="60%"/>
 </mvc:View>
+<!-- add an input field to our app, bind its value to the model, and bind the same value to the description of the input field. -->
