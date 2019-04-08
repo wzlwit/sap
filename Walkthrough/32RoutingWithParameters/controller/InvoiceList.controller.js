@@ -34,7 +34,7 @@ sap.ui.define([
 		},
 
 		onPress: function (oEvent) {
-			var oItem = oEvent.getSource();
+			var oItem = oEvent.getSource(); // ! similar as Java to get event source
 			var oRouter = UIComponent.getRouterFor(this);
 			oRouter.navTo("detail", {
 				invoicePath: oItem.getBindingContext("invoice").getPath().substr(1)
